@@ -1,0 +1,50 @@
+@import "../partials/variables";
+@import "../partials/fonts";
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+  
+    .content {
+      width: calc(100% - 350px);
+      background-color: $color_0D1221;
+  
+      @media (max-width: $big-mobile-min_width) {
+        width: 100%;
+      }
+    }
+  
+    .chat__placeholder {
+      background-color: $black;
+      width: 350px;
+  
+      @media (max-width: $big-mobile-min_width) {
+        display: none;
+      }
+    }
+  }
+  
+  .edit__profile--wrapper {
+    background-image: url(../images/background.png);
+    display: block;
+    padding-top: 18px;
+    color: $fff;
+    background-size: auto 320px;
+    background-repeat: repeat-x;
+    overflow: hidden;
+  
+    @media (max-width: $mobile_width) {
+      padding-top: 22px;
+    }
+  
+    .edit__profile {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      max-width: 740px;
+    }
+  }
+  

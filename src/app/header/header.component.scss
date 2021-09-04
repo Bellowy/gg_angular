@@ -1,0 +1,123 @@
+@import "../../partials/variables";
+
+.header {
+    background-color: $color_233056;
+    display: flex;
+    justify-content: space-between;
+  
+    &__menu {
+      display: flex;
+  
+      .logo {
+        padding: 15px 16px 11px 15px;
+      }
+  
+      .top__nav {
+        display: flex;
+        align-items: center;
+  
+        li {
+          padding-right: 24px;
+  
+          a {
+            font-size: 18px;
+            line-height: 1.38;
+            color: $fff;
+          }
+  
+          &:last-child {
+            padding-right: 14px;
+          }
+        }
+  
+        @media (max-width: $laptop_width) {
+          display: none;
+        }
+      }
+  
+      .burger {
+        display: none;
+  
+        @media (max-width: $laptop_width) {
+          display: flex;
+          padding: 18px 29px 18px 15px;
+        }
+      }
+  
+      .search {
+        padding-top: 19px;
+        cursor: pointer;
+  
+        @media(max-width: $mobile_width) {
+          display: none;
+        }
+      }
+    }
+  
+    &__info {
+      display: flex;
+      cursor: pointer;
+  
+      .profile__img {
+        padding: 10px 0px 5px 0px;
+      }
+  
+      .account__name {
+        color: $color_73adff;
+        font-size: 18px;
+        line-height: 1.38;
+        padding: 12px 0px 11px 12px;
+        margin-right: 34px;
+        position: relative;
+  
+        @media (max-width: $laptop_width) {
+          margin-right: 45px;
+        }
+  
+        @media(max-width: $mobile_width) {
+          display: none;
+        }
+  
+        &::before {
+          content: '';
+          position: absolute;
+          background-image: url(../../images/Arrow_Dropdown.svg);
+          width: 8px;
+          height: 5px;
+          right: -10px;
+          top: 45%;
+        }
+      }
+  
+      .chat {
+        display: none;
+  
+        @media(max-width: $mobile_width) {
+          display: flex;
+          padding: 12px 28px 15px 26px;
+        }
+      }
+  
+      .favorites {
+        display: none;
+  
+        @media (max-width: $laptop_width) {
+          display: flex;
+          padding: 12px 28px 16px 0px;
+        }
+      }
+  
+      .mail {
+        display: none;
+  
+        @media (max-width: $laptop_width) {
+          display: flex;
+          padding: 12px 13px 16px 0px;
+        }
+
+        @media (max-width: $mobile_width) {
+          padding: 12px 10px 16px 0px;
+        }
+      }
+    }
+}

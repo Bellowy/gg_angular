@@ -1,0 +1,114 @@
+<div class="tab__content">
+    <div class="tab__content--main">
+        <h3 class="h3 tab__content--main__title">Главное</h3>
+        <div class="tab__content--main__text">Основная служебная информация профиля, необходимая для авторизации</div>
+        <div class="tab__content--main__form">
+            <div class="form__wrapper">
+                <label class="label" for="login">Логин на сайте</label>
+                <input class="input" name="login" type="text" placeholder="F1bonacc1">
+            </div>
+            <div class="form__wrapper">
+                <label class="label" for="email">E-mail</label>
+                <div class="eye__input">
+                    <input class="input input__eye" type="text" name="email" placeholder="m*@g*">
+                </div>
+            </div>
+            <div class="form__wrapper">
+                <label class="label" for="time">Часовой пояс</label>
+                <div class="arrow__input">
+                    <input class="input" name="time" type="text" placeholder="Moscow (UTC +3)">
+                </div>
+            </div>
+        </div>
+        <div class="tab__content--main__button">
+            <div class="button__wrapper">
+                <button class="button button__submit" type="button">Сохранить изменения</button>
+                <p class="button__done">Изменения сохранились</p>
+            </div>
+        </div>
+    </div>
+    <div class="tab__content--avatar">
+        <h3 class="h3 tab__content--avatar__title">Аватар</h3>
+        <div class="tab__content--avatar__wrapper">
+            <div class="wrapper__avatar-button">
+                <div class="avatar">
+                    <img src='/images/ava.png'>
+                </div>
+                <div class="button__wrapper">
+                    <button class="button button__submit" type="button">Загрузить...</button>
+                    <div class="text">Требования: 200px на 200px, PNG или JPEG</div>
+                </div>
+            </div>
+            <div class="checkbox__wrapper">
+                
+                <input type="checkbox" value="checkbox"> <label for="checkbox" class="checkbox">Показать уровень комнаты на аватарке</label>
+            </div>
+        </div>
+    </div>
+    <div class="tab__content--background">
+        <h3 class="h3 tab__content--background__title">Фон профиля</h3>
+        <div class="tab__content--background__text">Если изображение достаточно маленькое по ширине, то оно начинает повторяться. Это можно использовать, загружая <a class="link" href="" target="_blank">бесшовные паттерны</a>.</div>
+        <div class="tab__content--background__wrapper">
+            <div class="wrapper__background-button">
+                <div class="background__img">
+                    <img src='/images/image_3.png'>
+                </div>
+                <div class="button__wrapper">
+                    <button class="button button__submit" type="button">Загрузить...</button>
+                    <div class="text">Минималый размер: 320px на 320px</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab__content--information">
+        <h3 class="h3 tab__content--information__title">Прочее</h3>
+        <div class="tab__content--information__text">Ваша личная информация, заполняйте по желанию</div>
+        <div class="tab__content--information__form">
+            <div class="form__wrapper">
+                <label class="label" for="name">Имя</label>
+                <input class="input" name="name" type="text" placeholder="Виктор">
+            </div>
+            <div class="form__wrapper">
+                <label class="label" for="surname">Фамилия</label>
+                <input class="input" name="surname" type="text" placeholder="Федоров">
+            </div>
+            <div class="form__wrapper">
+                <label class="label" for="country">Страна</label>
+                <input class="input" name="country" type="text" placeholder="Россия">
+            </div>
+            <div class="form__wrapper">
+                <label class="label" for="city">Город</label>
+                <input class="input" name="city" type="text" placeholder="Белгород">
+            </div>
+            <div class="form__wrapper">
+                <label class="label" for="Birth">Дата рождения</label>
+                <div class="birth__input icon icon-calendar">
+                    <input class="input input__eye" name="Birth" type="text" placeholder="29.02.1974">
+                </div>
+            </div>
+            <div class="form__wrapper form__wrapper--radio">
+                <span class="label">Пол</span>
+                <div class="radio__wrapper">
+                    <input type="radio" class="rb1" id="radio-1" value="1" name="radio"> <label class="label" for="radio-1">Женский</label>
+                    <input type="radio" class="rb2" id="radio-2" value="2" name="radio" checked> <label class="label" for="radio-2">Мужской</label>
+                    <input type="radio" class="rb3" id="radio-3" value="3" name="radio"> <label class="rb3__label label" for="radio-3"><span>Не указывать</span></label>
+                </div>
+            </div>
+        </div>
+        <div class="tab__content--main__button">
+            <div class="button__wrapper">
+                <button class="button button__submit button__lock" type="button">Сохранить изменения</button>
+            </div>
+        </div>
+    </div>
+    <div class="tab__content--about">
+        <h3 class="h3 tab__content--about__title">О себе</h3>
+        <div class="tab__content--about__text">Расскажите о себе (не более 500 символов).</div>
+        <textarea class="textarea" name="textarea" type="text" placeholder='Организатор "Турниры Сезона Гроз" по игре Gwent: The Witcher Card Game'></textarea>
+        <div class="tab__content--main__button">
+            <div class="button__wrapper">
+                <button class="button button__submit button__lock" type="button">Сохранить изменения</button>
+            </div>
+        </div>
+    </div>
+</div>

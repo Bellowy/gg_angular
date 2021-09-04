@@ -1,0 +1,64 @@
+@import "../../partials/variables";
+
+.breadcrumbs {
+    color: $color_73adff;
+    font-size: 14px;
+    line-height: 1.7;
+    position: relative;
+    cursor: pointer;
+    margin-left: 13px;
+    margin-bottom: 12px;
+
+    @media (max-width: $mobile_width) {
+        display: none;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url(../../images/Arrow_left.svg);
+      width: 7.5px;
+      height: 12px;
+      top: 6px;
+      left: -14px;
+    }
+  }
+
+.tab__panel {
+    position: relative;
+    display: flex;
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        background-color: $color_233056;
+    }
+
+    a {
+        color: $color_73adff;
+        font-size: 16px;
+        line-height: 1.75;
+        position: relative;
+        padding: 8px 16px 6px;
+    }
+
+    .active {
+        color: #fff;
+        position: relative;
+
+        &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        height: 4px;
+        background-color: #53709b;
+        border-radius: 1px 1px 0 0;
+        }
+    }
+}
